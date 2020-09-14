@@ -64,6 +64,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="PRATICIENS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRATICIENS.Designer.cs">
+      <DependentUpon>PRATICIENS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visiteurs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visiteurs.Designer.cs">
+      <DependentUpon>Visiteurs.cs</DependentUpon>
+    </Compile>
     <Compile Include="GestionCompteRendu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +92,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRATICIENS.resx">
+      <DependentUpon>PRATICIENS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visiteurs.resx">
+      <DependentUpon>Visiteurs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GestionCompteRendu.resx">
       <DependentUpon>GestionCompteRendu.cs</DependentUpon>
