@@ -91,3 +91,22 @@ C:\Users\hanon\OneDrive\Documents\BTS\PPE-3\GSB C#\PPEGSB\obj\Debug\PPEGSB.cspro
 C:\Users\hanon\OneDrive\Documents\BTS\PPE-3\GSB C#\PPEGSB\obj\Debug\PPEGSB.csproj.CopyComplete
 C:\Users\hanon\OneDrive\Documents\BTS\PPE-3\GSB C#\PPEGSB\obj\Debug\PPEGSB.exe
 C:\Users\hanon\OneDrive\Documents\BTS\PPE-3\GSB C#\PPEGSB\obj\Debug\PPEGSB.pdb
+C:\Users\jeremy\Source\Repos\PPE-3\PPEGSB\bin\Debug\PPEGSB.exe.config
+C:\Users\jeremy\Source\Repos\PPE-3\PPEGSB\bin\Debug\PPEGSB.exe
+C:\Users\jeremy\Source\Repos\PPE-3\PPEGSB\bin\Debug\PPEGSB.pdb
+C:\Users\jeremy\Source\Repos\PPE-3\PPEGSB\bin\Debug\MySql.Data.xml
+C:\Users\jeremy\Source\Repos\PPE-3\PPEGSB\obj\Debug\PPEGSB.csprojAssemblyReference.cache
+C:\Users\jeremy\Source\Repos\PPE-3\PPEGSB\obj\Debug\PPEGSB.APropos.resources
+C:\Users\jeremy\Source\Repos\PPE-3\PPEGSB\obj\Debug\PPEGSB.FMenuPrincipal.resources
+C:\Users\jeremy\Source\Repos\PPE-3\PPEGSB\obj\Debug\PPEGSB.EspaceConnection.resources
+C:\Users\jeremy\Source\Repos\PPE-3\PPEGSB\obj\Debug\PPEGSB.FPraticien.resources
+C:\Users\jeremy\Source\Repos\PPE-3\PPEGSB\obj\Debug\PPEGSB.FPraticiens.resources
+C:\Users\jeremy\Source\Repos\PPE-3\PPEGSB\obj\Debug\PPEGSB.FRapportsDeVisite.resources
+C:\Users\jeremy\Source\Repos\PPE-3\PPEGSB\obj\Debug\PPEGSB.FVisiteurs.resources
+C:\Users\jeremy\Source\Repos\PPE-3\PPEGSB\obj\Debug\PPEGSB.Medicaments.resources
+C:\Users\jeremy\Source\Repos\PPE-3\PPEGSB\obj\Debug\PPEGSB.Properties.Resources.resources
+C:\Users\jeremy\Source\Repos\PPE-3\PPEGSB\obj\Debug\PPEGSB.csproj.GenerateResource.cache
+C:\Users\jeremy\Source\Repos\PPE-3\PPEGSB\obj\Debug\PPEGSB.csproj.CoreCompileInputs.cache
+C:\Users\jeremy\Source\Repos\PPE-3\PPEGSB\obj\Debug\PPEGSB.csproj.CopyComplete
+C:\Users\jeremy\Source\Repos\PPE-3\PPEGSB\obj\Debug\PPEGSB.exe
+C:\Users\jeremy\Source\Repos\PPE-3\PPEGSB\obj\Debug\PPEGSB.pdb

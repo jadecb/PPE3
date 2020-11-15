@@ -76,7 +76,7 @@ namespace DAO
 				return false;
 			}
 		}
-
+		
 		public static Boolean CreateRapport(RapportDeVisite rapport)
 		{
 			RapportDeVisite nouveauRapport = null;
@@ -91,5 +91,6 @@ namespace DAO
 				return false;
 			}
 		}
+		
 	}
 }

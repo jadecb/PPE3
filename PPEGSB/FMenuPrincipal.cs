@@ -58,5 +58,10 @@ namespace PPEGSB
             FVisiteurs visiteurs = new FVisiteurs();
             visiteurs.ShowDialog();
         }
+
+        private void AccesEspaceConnexion_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

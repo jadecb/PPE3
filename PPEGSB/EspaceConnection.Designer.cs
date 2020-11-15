@@ -43,7 +43,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.label1.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label1.Location = new System.Drawing.Point(322, 160);
+            this.label1.Location = new System.Drawing.Point(58, 55);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(136, 25);
             this.label1.TabIndex = 0;
@@ -52,7 +52,7 @@
             // nomTbx
             // 
             this.nomTbx.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.nomTbx.Location = new System.Drawing.Point(327, 188);
+            this.nomTbx.Location = new System.Drawing.Point(63, 95);
             this.nomTbx.Name = "nomTbx";
             this.nomTbx.Size = new System.Drawing.Size(131, 26);
             this.nomTbx.TabIndex = 1;
@@ -60,7 +60,7 @@
             // mdpTbx
             // 
             this.mdpTbx.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.mdpTbx.Location = new System.Drawing.Point(327, 220);
+            this.mdpTbx.Location = new System.Drawing.Point(63, 138);
             this.mdpTbx.Name = "mdpTbx";
             this.mdpTbx.PasswordChar = '*';
             this.mdpTbx.Size = new System.Drawing.Size(131, 26);
@@ -69,9 +69,9 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button1.Location = new System.Drawing.Point(383, 252);
+            this.button1.Location = new System.Drawing.Point(256, 104);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 26);
+            this.button1.Size = new System.Drawing.Size(104, 48);
             this.button1.TabIndex = 3;
             this.button1.Text = "OK";
             this.button1.UseVisualStyleBackColor = true;
@@ -80,9 +80,9 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button3.Location = new System.Drawing.Point(764, 460);
+            this.button3.Location = new System.Drawing.Point(795, 429);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(147, 53);
+            this.button3.Size = new System.Drawing.Size(116, 84);
             this.button3.TabIndex = 5;
             this.button3.Text = "Quitter l\'application";
             this.button3.UseVisualStyleBackColor = true;

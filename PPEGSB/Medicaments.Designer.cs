@@ -40,7 +40,7 @@
             // 
             // lVMedicaments
             // 
-            this.lVMedicaments.BackColor = System.Drawing.SystemColors.Control;
+            this.lVMedicaments.BackColor = System.Drawing.SystemColors.Window;
             this.lVMedicaments.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
@@ -90,7 +90,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(934, 525);
             this.Controls.Add(this.lVMedicaments);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

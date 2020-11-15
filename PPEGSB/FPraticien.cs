@@ -23,7 +23,7 @@ namespace PPEGSB
 		public FPraticien(Praticien praticien) : this()
 		{
 			this.praticien = praticien;
-			labTitre.Text = praticien.Nom + " " + praticien.Prenom;
+			
 		}
 
 		private void FPraticien_Load(object sender, EventArgs e)

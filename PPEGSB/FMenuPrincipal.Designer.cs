@@ -47,7 +47,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(459, 156);
+            this.pictureBox1.Location = new System.Drawing.Point(228, 139);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(418, 247);
             this.pictureBox1.TabIndex = 0;
@@ -66,7 +66,7 @@
             this.quitterToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1398, 27);
+            this.menuStrip1.Size = new System.Drawing.Size(915, 27);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -134,18 +134,19 @@
             this.AccesEspaceConnexion.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.AccesEspaceConnexion.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.AccesEspaceConnexion.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AccesEspaceConnexion.Location = new System.Drawing.Point(1031, 44);
+            this.AccesEspaceConnexion.Location = new System.Drawing.Point(12, 37);
             this.AccesEspaceConnexion.Name = "AccesEspaceConnexion";
-            this.AccesEspaceConnexion.Size = new System.Drawing.Size(355, 25);
+            this.AccesEspaceConnexion.Size = new System.Drawing.Size(165, 25);
             this.AccesEspaceConnexion.TabIndex = 2;
-            this.AccesEspaceConnexion.Text = "Bienvenue dans votre espace personnel";
+            this.AccesEspaceConnexion.Text = "Espace Personnel";
+            this.AccesEspaceConnexion.Click += new System.EventHandler(this.AccesEspaceConnexion_Click);
             // 
             // FMenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1398, 562);
+            this.ClientSize = new System.Drawing.Size(915, 562);
             this.Controls.Add(this.AccesEspaceConnexion);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);

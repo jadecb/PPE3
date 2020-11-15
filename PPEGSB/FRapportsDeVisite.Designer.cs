@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btNouveau = new System.Windows.Forms.Button();
             this.btEnregistrer = new System.Windows.Forms.Button();
             this.tbxBilan = new System.Windows.Forms.RichTextBox();
-            this.details = new System.Windows.Forms.Button();
             this.Precedent = new System.Windows.Forms.Button();
             this.Suivant = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
@@ -56,7 +56,6 @@
             this.fillByToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.presenterBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.presenterTableAdapter = new PPEGSB.ppegsbDataSetTableAdapters.presenterTableAdapter();
-            this.btNouveau = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.presenterBindingSource1)).BeginInit();
@@ -70,7 +69,6 @@
             this.panel2.Controls.Add(this.btNouveau);
             this.panel2.Controls.Add(this.btEnregistrer);
             this.panel2.Controls.Add(this.tbxBilan);
-            this.panel2.Controls.Add(this.details);
             this.panel2.Controls.Add(this.Precedent);
             this.panel2.Controls.Add(this.Suivant);
             this.panel2.Controls.Add(this.label13);
@@ -85,10 +83,20 @@
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.label7);
-            this.panel2.Location = new System.Drawing.Point(668, 281);
+            this.panel2.Location = new System.Drawing.Point(232, 99);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(824, 436);
             this.panel2.TabIndex = 12;
+            // 
+            // btNouveau
+            // 
+            this.btNouveau.Location = new System.Drawing.Point(688, 36);
+            this.btNouveau.Name = "btNouveau";
+            this.btNouveau.Size = new System.Drawing.Size(111, 52);
+            this.btNouveau.TabIndex = 21;
+            this.btNouveau.Text = "Nouveau";
+            this.btNouveau.UseVisualStyleBackColor = true;
+            this.btNouveau.Click += new System.EventHandler(this.btNouveau_Click);
             // 
             // btEnregistrer
             // 
@@ -108,16 +116,6 @@
             this.tbxBilan.Size = new System.Drawing.Size(157, 96);
             this.tbxBilan.TabIndex = 19;
             this.tbxBilan.Text = "";
-            // 
-            // details
-            // 
-            this.details.Location = new System.Drawing.Point(249, 106);
-            this.details.Name = "details";
-            this.details.Size = new System.Drawing.Size(75, 23);
-            this.details.TabIndex = 18;
-            this.details.Text = "Détails";
-            this.details.UseVisualStyleBackColor = true;
-            this.details.Click += new System.EventHandler(this.details_Click);
             // 
             // Precedent
             // 
@@ -213,7 +211,7 @@
             this.cbxPraticien.Name = "cbxPraticien";
             this.cbxPraticien.Size = new System.Drawing.Size(121, 21);
             this.cbxPraticien.TabIndex = 13;
-            this.cbxPraticien.TextChanged += new System.EventHandler(this.cbxPraticien_TextChanged);
+            
             // 
             // tbxNumRap
             // 
@@ -289,7 +287,7 @@
             this.fillByToolStripButton});
             this.fillByToolStrip.Location = new System.Drawing.Point(0, 0);
             this.fillByToolStrip.Name = "fillByToolStrip";
-            this.fillByToolStrip.Size = new System.Drawing.Size(1963, 25);
+            this.fillByToolStrip.Size = new System.Drawing.Size(1105, 25);
             this.fillByToolStrip.TabIndex = 14;
             this.fillByToolStrip.Text = "fillByToolStrip";
             // 
@@ -310,21 +308,11 @@
             // 
             this.presenterTableAdapter.ClearBeforeFill = true;
             // 
-            // btNouveau
-            // 
-            this.btNouveau.Location = new System.Drawing.Point(688, 36);
-            this.btNouveau.Name = "btNouveau";
-            this.btNouveau.Size = new System.Drawing.Size(111, 52);
-            this.btNouveau.TabIndex = 21;
-            this.btNouveau.Text = "Nouveau";
-            this.btNouveau.UseVisualStyleBackColor = true;
-            this.btNouveau.Click += new System.EventHandler(this.btNouveau_Click);
-            // 
             // FRapportsDeVisite
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1963, 913);
+            this.ClientSize = new System.Drawing.Size(1105, 573);
             this.Controls.Add(this.fillByToolStrip);
             this.Controls.Add(this.panel2);
             this.Name = "FRapportsDeVisite";
@@ -371,7 +359,6 @@
         private System.Windows.Forms.ToolStripButton fillByToolStripButton;
         private System.Windows.Forms.Button Suivant;
         private System.Windows.Forms.Button Precedent;
-        private System.Windows.Forms.Button details;
         private System.Windows.Forms.RichTextBox tbxBilan;
         private System.Windows.Forms.Button btEnregistrer;
         private System.Windows.Forms.Button btNouveau;

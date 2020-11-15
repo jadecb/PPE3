@@ -141,35 +141,7 @@ namespace PPEGSB
         }
 
 
-        private void cbxPraticien_TextChanged(object sender, EventArgs e)
-        {
-            // chercher si praticien existe
-            
-
-            string[] NomPrenom = cbxPraticien.Text.Split(' ');
-            
-            Praticien praticien;
-
-            try
-            {
-                praticien = DAOPraticiens.GetPraticienParNomPrenom(NomPrenom[0], NomPrenom[1]);
-            }
-            catch(System.IndexOutOfRangeException)
-            {
-                MessageBox.Show("Format Incorrect");
-                praticien = null;
-            }
-            
-            if ((cbxPraticien.Text == "") || (praticien == null))
-            {
-                details.Enabled = false;
-            }
-            else
-            {
-                details.Enabled = true;
-            }
-            
-        }
+        
 
         private void details_Click(object sender, EventArgs e)
         {

@@ -28,21 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.labTitre = new System.Windows.Forms.Label();
             this.lvPraticien = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btInfosTypePraticien = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // labTitre
-            // 
-            this.labTitre.AutoSize = true;
-            this.labTitre.Location = new System.Drawing.Point(111, 9);
-            this.labTitre.Name = "labTitre";
-            this.labTitre.Size = new System.Drawing.Size(35, 13);
-            this.labTitre.TabIndex = 0;
-            this.labTitre.Text = "label1";
             // 
             // lvPraticien
             // 
@@ -84,18 +74,14 @@
             this.ClientSize = new System.Drawing.Size(1068, 450);
             this.Controls.Add(this.btInfosTypePraticien);
             this.Controls.Add(this.lvPraticien);
-            this.Controls.Add(this.labTitre);
             this.Name = "FPraticien";
             this.Text = "Praticien";
             this.Load += new System.EventHandler(this.FPraticien_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label labTitre;
         private System.Windows.Forms.ListView lvPraticien;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
