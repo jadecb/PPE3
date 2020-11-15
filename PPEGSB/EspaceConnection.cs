@@ -24,7 +24,7 @@ namespace PPEGSB
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if ((nomTbx.Text == "swiss") && (mdpTbx.Text == "18-jun-2003") 
+            if ((nomTbx.Text == "swiss") && (mdpTbx.Text == "connexion") 
                 || (nomTbx.Text == "Villechalane") && (mdpTbx.Text == "11-dec-1992")
                 || (nomTbx.Text == "Andre") && (mdpTbx.Text == "26-aug-1991")
                 || (nomTbx.Text == "Bentot") && (mdpTbx.Text == "11-mar-1996"))
