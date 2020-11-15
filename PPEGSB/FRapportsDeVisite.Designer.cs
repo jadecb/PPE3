@@ -83,7 +83,7 @@
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.label7);
-            this.panel2.Location = new System.Drawing.Point(232, 99);
+            this.panel2.Location = new System.Drawing.Point(118, 40);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(824, 436);
             this.panel2.TabIndex = 12;
@@ -211,7 +211,6 @@
             this.cbxPraticien.Name = "cbxPraticien";
             this.cbxPraticien.Size = new System.Drawing.Size(121, 21);
             this.cbxPraticien.TabIndex = 13;
-            
             // 
             // tbxNumRap
             // 
@@ -287,7 +286,7 @@
             this.fillByToolStripButton});
             this.fillByToolStrip.Location = new System.Drawing.Point(0, 0);
             this.fillByToolStrip.Name = "fillByToolStrip";
-            this.fillByToolStrip.Size = new System.Drawing.Size(1105, 25);
+            this.fillByToolStrip.Size = new System.Drawing.Size(1031, 25);
             this.fillByToolStrip.TabIndex = 14;
             this.fillByToolStrip.Text = "fillByToolStrip";
             // 
@@ -312,7 +311,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1105, 573);
+            this.ClientSize = new System.Drawing.Size(1031, 501);
             this.Controls.Add(this.fillByToolStrip);
             this.Controls.Add(this.panel2);
             this.Name = "FRapportsDeVisite";
