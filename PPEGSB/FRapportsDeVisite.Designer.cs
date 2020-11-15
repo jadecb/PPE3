@@ -194,20 +194,20 @@
             // 
             this.tbxMotif.Location = new System.Drawing.Point(144, 196);
             this.tbxMotif.Name = "tbxMotif";
-            this.tbxMotif.Size = new System.Drawing.Size(100, 20);
+            this.tbxMotif.Size = new System.Drawing.Size(121, 20);
             this.tbxMotif.TabIndex = 13;
             // 
             // tbxDateRapport
             // 
             this.tbxDateRapport.Location = new System.Drawing.Point(144, 156);
             this.tbxDateRapport.Name = "tbxDateRapport";
-            this.tbxDateRapport.Size = new System.Drawing.Size(100, 20);
+            this.tbxDateRapport.Size = new System.Drawing.Size(121, 20);
             this.tbxDateRapport.TabIndex = 13;
             // 
             // cbxPraticien
             // 
             this.cbxPraticien.FormattingEnabled = true;
-            this.cbxPraticien.Location = new System.Drawing.Point(118, 108);
+            this.cbxPraticien.Location = new System.Drawing.Point(144, 108);
             this.cbxPraticien.Name = "cbxPraticien";
             this.cbxPraticien.Size = new System.Drawing.Size(121, 21);
             this.cbxPraticien.TabIndex = 13;
@@ -217,7 +217,7 @@
             this.tbxNumRap.Enabled = false;
             this.tbxNumRap.Location = new System.Drawing.Point(183, 68);
             this.tbxNumRap.Name = "tbxNumRap";
-            this.tbxNumRap.Size = new System.Drawing.Size(100, 20);
+            this.tbxNumRap.Size = new System.Drawing.Size(82, 20);
             this.tbxNumRap.TabIndex = 14;
             // 
             // label12
