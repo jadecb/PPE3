@@ -20,7 +20,7 @@ namespace DAO
 		public static List<Medicament> GetMedicaments()
 		{
 			List <Medicament> medicaments  = null;
-			string selectMedicaments = "SELECT MED_DEPOTLEGAL, MED_NOMCOMMERCIAL, MED_COMPOSITION, MED_EFFETS, MED_CONTREINDIC, MED_PRIXECHANTILLON FROM MEDICAMENT";
+			string selectMedicaments = "SELECT MED_DEPOTLEGAL, MED_NOMCOMMERCIAL, MED_COMPOSITION, MED_EFFETS, MED_CONTREINDIC, MED_PRIXECHANTILLON FROM SVMEDICAMENT";
 			DataTable dataTable = DBInterface.Select(selectMedicaments);
 			//Le Datatable retourné est transformé en collection de médicaments
 			if (dataTable != null)

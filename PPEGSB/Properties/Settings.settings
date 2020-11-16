@@ -10,5 +10,13 @@
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
       <Value Profile="(Default)">server=localhost;user id=root;database=ppegsb</Value>
     </Setting>
+    <Setting Name="jguillerminConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=192.168.100.236;Initial Catalog=jguillermin;Persist Security Info=True;User ID=jguillermin;Password=Jecacodi93&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=192.168.100.236;Initial Catalog=jguillermin;Persist Security Info=True;User ID=jguillermin;Password=Jecacodi93</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

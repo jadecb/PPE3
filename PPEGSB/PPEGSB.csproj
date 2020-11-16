@@ -94,6 +94,11 @@
     <Compile Include="FVisiteurs.Designer.cs">
       <DependentUpon>FVisiteurs.cs</DependentUpon>
     </Compile>
+    <Compile Include="jguillerminDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>jguillerminDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="TypePraticien.cs" />
     <Compile Include="DAOPraticiens.cs" />
     <Compile Include="DAOTypePraticien.cs" />
@@ -175,6 +180,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="jguillerminDataSet.xsc">
+      <DependentUpon>jguillerminDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="jguillerminDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>jguillerminDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="jguillerminDataSet.xss">
+      <DependentUpon>jguillerminDataSet.xsd</DependentUpon>
+    </None>
     <None Include="ppegsbDataSet.xsc">
       <DependentUpon>ppegsbDataSet.xsd</DependentUpon>
     </None>

@@ -7,7 +7,7 @@ using System.Configuration;
 using System.Data;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
-
+using System.Data.SqlClient;
 
 namespace Persistance
 {
@@ -23,18 +23,18 @@ namespace Persistance
 		/// <returns></returns>
 		public static DataTable Select(String req)
 		{
-			MySqlConnection cnx = null;
+			SqlConnection cnx = null;
 			DataTable dataTable = null;
 			try
 			{
 				//La méthode GetConnexion de la classe Connexion est statique : méthode à portée classe.
 				cnx = Connexion.GetConnexion();
 				//On crée une commande mysql comme dans le TP précédent
-				MySqlCommand cmd = new MySqlCommand();
+				SqlCommand cmd = new SqlCommand();
 				cmd.Connection = cnx;
 				cmd.CommandText = req;
 				//On crée le dataadapter qui communique avec la BDD
-				MySqlDataAdapter da = new MySqlDataAdapter();
+				SqlDataAdapter da = new SqlDataAdapter();
 				da.SelectCommand = cmd;
 				// Construire le DataSet. Ce DataSet porte un nom générique (et non le nom d'une table précise).
 				DataSet ds = new DataSet();
@@ -66,12 +66,12 @@ namespace Persistance
 		/// <returns>Le nombre de lignes affectées par la requête.</returns>
 		public static int Update(string req)
 		{
-			MySqlConnection cnx = null;
+			SqlConnection cnx = null;
 			int rowsAffected = 0;
 			try
 			{
 				cnx = Connexion.GetConnexion();
-				MySqlCommand cmd = new MySqlCommand();
+				SqlCommand cmd = new SqlCommand();
 				cmd.Connection = cnx;
 				cmd.CommandText = req;
 				rowsAffected = cmd.ExecuteNonQuery();
