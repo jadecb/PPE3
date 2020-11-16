@@ -20,7 +20,7 @@ namespace DAO
         public static List<Praticien> GetPraticien()
         {
             List<Praticien> praticiens = null;
-            string selectPraticiens = "SELECT PRA_NUM, PRA_NOM, PRA_PRENOM, PRA_ADRESSE, PRA_CP, PRA_VILLE, PRA_COEFNOTORIETE, TYP_CODE FROM PRATICIEN";
+            string selectPraticiens = "SELECT PRA_NUM, PRA_NOM, PRA_PRENOM, PRA_ADRESSE, PRA_CP, PRA_VILLE, PRA_COEFNOTORIETE, TYP_CODE FROM SVPRATICIEN";
             DataTable dataTable = DBInterface.Select(selectPraticiens);
             //Le Datatable retourné est transformé en collection de Client
             if (dataTable != null)
@@ -38,7 +38,7 @@ namespace DAO
         public static Praticien GetPraticienParNomPrenom(string nom, string prenom)
         {
             Praticien praticien = null;
-            string selectPraticien = "SELECT PRA_NUM, PRA_NOM, PRA_PRENOM, PRA_ADRESSE, PRA_CP, PRA_VILLE, PRA_COEFNOTORIETE, TYP_CODE FROM PRATICIEN WHERE PRA_NOM='" + nom + "' AND PRA_PRENOM='" + prenom + "'";
+            string selectPraticien = "SELECT PRA_NUM, PRA_NOM, PRA_PRENOM, PRA_ADRESSE, PRA_CP, PRA_VILLE, PRA_COEFNOTORIETE, TYP_CODE FROM SVPRATICIEN WHERE PRA_NOM='" + nom + "' AND PRA_PRENOM='" + prenom + "'";
             DataTable dataTable = DBInterface.Select(selectPraticien);
             if (dataTable.Rows.Count != 0)
             {
@@ -69,7 +69,7 @@ namespace DAO
 
         public static List<Praticien> GetPraticiens() {
             List<Praticien> praticiens = null;
-            string selectPraticiens = "SELECT PRA_NUM, PRA_NOM, PRA_PRENOM, PRA_ADRESSE, PRA_CP, PRA_VILLE, PRA_COEFNOTORIETE, TYP_CODE FROM PRATICIEN; ";
+            string selectPraticiens = "SELECT PRA_NUM, PRA_NOM, PRA_PRENOM, PRA_ADRESSE, PRA_CP, PRA_VILLE, PRA_COEFNOTORIETE, TYP_CODE FROM SVPRATICIEN; ";
             DataTable dataTable = DBInterface.Select(selectPraticiens);
 			    
 			if (dataTable != null)

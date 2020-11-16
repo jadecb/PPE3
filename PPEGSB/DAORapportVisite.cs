@@ -20,7 +20,7 @@ namespace DAO
 		public static List<RapportDeVisite> GetRapports()
 		{
 			List<RapportDeVisite> rapports = null;
-			string selectRapports = "SELECT RAP_NUM, RAP_DATE, RAP_BILAN, RAP_MOTIF, PRA_NUM, VIS_MATRICULE FROM RAPPORTVISITE;";
+			string selectRapports = "SELECT RAP_NUM, RAP_DATE, RAP_BILAN, RAP_MOTIF, PRA_NUM, VIS_MATRICULE FROM SVRAPPORTVISITE;";
 			DataTable dataTable = DBInterface.Select(selectRapports);
 			//Le Datatable retourné est transformé en collection de rapports de visite
 			if (dataTable != null)
@@ -65,7 +65,7 @@ namespace DAO
 
 		public static Boolean UpdateRapport(RapportDeVisite rapport)
 		{
-			string updateRapport = "UPDATE RAPPORTVISITE SET RAP_DATE='" + rapport.Date + "', RAP_BILAN='" + rapport.Bilan + "', RAP_MOTIF='" + rapport.Motif + "', PRA_NUM='" + rapport.NuméroPraticien.ToString() + "' WHERE RAP_NUM='" + rapport.Numéro + "';";
+			string updateRapport = "UPDATE SVRAPPORTVISITE SET RAP_DATE='" + rapport.Date + "', RAP_BILAN='" + rapport.Bilan + "', RAP_MOTIF='" + rapport.Motif + "', PRA_NUM='" + rapport.NuméroPraticien.ToString() + "' WHERE RAP_NUM='" + rapport.Numéro + "';";
 			int updatedRows = DBInterface.Update(updateRapport);
 			if (updatedRows > 0)
 			{
@@ -80,7 +80,7 @@ namespace DAO
 		public static Boolean CreateRapport(RapportDeVisite rapport)
 		{
 			RapportDeVisite nouveauRapport = null;
-			string createRapport = "INSERT INTO RAPPORTVISITE VALUES ('" + rapport.Numéro + "', '" + rapport.Date + "', '" + rapport.Bilan + "', '" + rapport.Motif + "', '" + rapport.NuméroPraticien + "', '" + rapport.MatriculeVisiteur + "');";
+			string createRapport = "INSERT INTO SVRAPPORTVISITE VALUES ('" + rapport.Numéro + "', '" + rapport.Date + "', '" + rapport.Bilan + "', '" + rapport.Motif + "', '" + rapport.NuméroPraticien + "', '" + rapport.MatriculeVisiteur + "');";
 			int updatedRows = DBInterface.Update(createRapport);
 			if (updatedRows > 0)
 			{

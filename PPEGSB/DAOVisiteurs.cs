@@ -20,7 +20,7 @@ namespace DAO
 		public static List<Visiteur> GetVisiteurs()
 		{
 			List<Visiteur> visiteurs = null;
-			string selectVisiteurs = "SELECT VIS_MATRICULE, VIS_NOM, VIS_PRENOM, VIS_ADRESSE, VIS_CP, VIS_VILLE, VIS_DATEEMBAUCHE FROM VISITEUR;";
+			string selectVisiteurs = "SELECT VIS_MATRICULE, VIS_NOM, VIS_PRENOM, VIS_ADRESSE, VIS_CP, VIS_VILLE, VIS_DATEEMBAUCHE FROM SVVISITEUR;";
 			DataTable dataTable = DBInterface.Select(selectVisiteurs);
 			//Le Datatable retourné est transformé en collection de médicaments
 			if (dataTable != null)

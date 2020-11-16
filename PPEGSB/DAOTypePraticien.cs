@@ -24,7 +24,7 @@ namespace DAO
 		public static TypePraticien GetPraticien(string typeCode)
 		{
 			TypePraticien typepraticien = null;
-			string selectInfosTypePraticien = "SELECT TYP_CODE, TYP_LIBELLE, TYP_LIEU FROM TYPEPRATICIEN WHERE TYP_CODE=" + typeCode + "'";
+			string selectInfosTypePraticien = "SELECT TYP_CODE, TYP_LIBELLE, TYP_LIEU FROM SVTYPEPRATICIEN WHERE TYP_CODE=" + typeCode + "'";
 			DataTable dataTable = DBInterface.Select(selectInfosTypePraticien);
 			if (dataTable != null)
 			{
