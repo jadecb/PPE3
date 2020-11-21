@@ -26,7 +26,7 @@ namespace PPEGSB
         private void FRapportsDeVisite_Load(object sender, EventArgs e)
         {
             // TODO: cette ligne de code charge les données dans la table 'ppegsbDataSet.presenter'. Vous pouvez la déplacer ou la supprimer selon les besoins.
-            this.presenterTableAdapter.Fill(this.ppegsbDataSet.presenter);
+            this.svpresenterTableAdapter1.Fill(this.jguillerminDataSet1.SVPRESENTER);
             //On récupère la liste des rapports de visite (objets métiers)
             List<RapportDeVisite> rapports = DAORapportVisite.GetRapports();
             //On teste si cette liste n'est pas null
@@ -77,7 +77,7 @@ namespace PPEGSB
         {
             try
             {
-                this.presenterTableAdapter.FillBy(this.ppegsbDataSet.presenter);
+                this.svpresenterTableAdapter1.FillBy(this.jguillerminDataSet1.SVPRESENTER);
             }
             catch (System.Exception ex)
             {
@@ -222,6 +222,11 @@ namespace PPEGSB
             tbxBilan.Text = "";
             cbxPraticien.SelectedIndex = 0;
             this.nouveau = true;
+        }
+
+        private void presenterBindingSource1_CurrentChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

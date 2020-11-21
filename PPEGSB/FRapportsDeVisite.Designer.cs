@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btNouveau = new System.Windows.Forms.Button();
             this.btEnregistrer = new System.Windows.Forms.Button();
@@ -37,11 +36,6 @@
             this.Suivant = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.rAPNUMDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.presenterBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.ppegsbDataSet = new PPEGSB.ppegsbDataSet();
             this.tbxMotif = new System.Windows.Forms.TextBox();
             this.tbxDateRapport = new System.Windows.Forms.TextBox();
             this.cbxPraticien = new System.Windows.Forms.ComboBox();
@@ -54,14 +48,12 @@
             this.label7 = new System.Windows.Forms.Label();
             this.fillByToolStrip = new System.Windows.Forms.ToolStrip();
             this.fillByToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.presenterBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.presenterTableAdapter = new PPEGSB.ppegsbDataSetTableAdapters.presenterTableAdapter();
+            this.jguillerminDataSet1 = new PPEGSB.jguillerminDataSet();
+            this.svpresenterTableAdapter1 = new PPEGSB.jguillerminDataSetTableAdapters.SVPRESENTERTableAdapter();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.presenterBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ppegsbDataSet)).BeginInit();
             this.fillByToolStrip.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.presenterBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.jguillerminDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -149,46 +141,11 @@
             // 
             // dataGridView1
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.rAPNUMDataGridViewTextBoxColumn,
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2});
-            this.dataGridView1.DataSource = this.presenterBindingSource1;
             this.dataGridView1.Location = new System.Drawing.Point(396, 196);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(316, 133);
             this.dataGridView1.TabIndex = 13;
-            // 
-            // rAPNUMDataGridViewTextBoxColumn
-            // 
-            this.rAPNUMDataGridViewTextBoxColumn.DataPropertyName = "RAP_NUM";
-            this.rAPNUMDataGridViewTextBoxColumn.HeaderText = "RAP_NUM";
-            this.rAPNUMDataGridViewTextBoxColumn.Name = "rAPNUMDataGridViewTextBoxColumn";
-            this.rAPNUMDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "MED_DEPOTLEGAL";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Médicament";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Nombre_Echantillon";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Nb. Echantillon";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // presenterBindingSource1
-            // 
-            this.presenterBindingSource1.DataMember = "presenter";
-            this.presenterBindingSource1.DataSource = this.ppegsbDataSet;
-            // 
-            // ppegsbDataSet
-            // 
-            this.ppegsbDataSet.DataSetName = "ppegsbDataSet";
-            this.ppegsbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // tbxMotif
             // 
@@ -298,14 +255,14 @@
             this.fillByToolStripButton.Text = "FillBy";
             this.fillByToolStripButton.Click += new System.EventHandler(this.fillByToolStripButton_Click);
             // 
-            // presenterBindingSource
+            // jguillerminDataSet1
             // 
-            this.presenterBindingSource.DataMember = "presenter";
-            this.presenterBindingSource.DataSource = this.ppegsbDataSet;
+            this.jguillerminDataSet1.DataSetName = "jguillerminDataSet";
+            this.jguillerminDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // presenterTableAdapter
+            // svpresenterTableAdapter1
             // 
-            this.presenterTableAdapter.ClearBeforeFill = true;
+            this.svpresenterTableAdapter1.ClearBeforeFill = true;
             // 
             // FRapportsDeVisite
             // 
@@ -320,11 +277,9 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.presenterBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ppegsbDataSet)).EndInit();
             this.fillByToolStrip.ResumeLayout(false);
             this.fillByToolStrip.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.presenterBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.jguillerminDataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -344,16 +299,9 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
-        private ppegsbDataSet ppegsbDataSet;
-        private System.Windows.Forms.BindingSource presenterBindingSource;
-        private ppegsbDataSetTableAdapters.presenterTableAdapter presenterTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn mEDDEPOTLEGALDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombreEchantillonDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn rAPNUMDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.BindingSource presenterBindingSource1;
         private System.Windows.Forms.ToolStrip fillByToolStrip;
         private System.Windows.Forms.ToolStripButton fillByToolStripButton;
         private System.Windows.Forms.Button Suivant;
@@ -361,5 +309,7 @@
         private System.Windows.Forms.RichTextBox tbxBilan;
         private System.Windows.Forms.Button btEnregistrer;
         private System.Windows.Forms.Button btNouveau;
+        private jguillerminDataSet jguillerminDataSet1;
+        private jguillerminDataSetTableAdapters.SVPRESENTERTableAdapter svpresenterTableAdapter1;
     }
 }

@@ -99,6 +99,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>jguillerminDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ppegsbDataSet.cs">
+      <DependentUpon>ppegsbDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="TypePraticien.cs" />
     <Compile Include="DAOPraticiens.cs" />
     <Compile Include="DAOTypePraticien.cs" />
