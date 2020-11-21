@@ -79,7 +79,7 @@ namespace DAO
 		
 		public static Boolean CreateRapport(RapportDeVisite rapport)
 		{
-			RapportDeVisite nouveauRapport = null;
+			
 			string createRapport = "INSERT INTO SVRAPPORTVISITE VALUES ('" + rapport.Numéro + "', '" + rapport.Date + "', '" + rapport.Bilan + "', '" + rapport.Motif + "', '" + rapport.NuméroPraticien + "', '" + rapport.MatriculeVisiteur + "');";
 			int updatedRows = DBInterface.Update(createRapport);
 			if (updatedRows > 0)

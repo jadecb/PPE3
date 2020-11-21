@@ -145,7 +145,7 @@ namespace PPEGSB
 
         private void details_Click(object sender, EventArgs e)
         {
-            Praticien PraticienSelectionne;
+            
 
             int indiceSelectionne = cbxPraticien.SelectedIndex;
 
